@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Typing Test</title>
+  </head>
+  <body >
+    <div class="left-container" >
+      <h2 id="heading">Typing Test</h2>
+      <img src="images/My project (1).jpg" alt="Not found"/>
+    </div>
+    <div class="line"></div>
+    <div class="right-container">
+      <div class="practice-container">
+        Test your typing skills with a quote.
+      </div>
+      <div class="click">Click Start button to begin</div>
+      <p id="highest"> </p>
+      <p id="quote"></p>
+      <input
+        type="text"
+        aria-label="current  word"
+        id="typed-value"
+        placeholder="Type here..."
+      />
+      <br>
+      <button type="submit" id="start">Start</button>
+
+      <div id="modal">
+        <div id="success">
+            <div id="message"></div>
+            <br>
+            <button type="button" id="okButton">OK</button>
+        </div>
+      </div>
+    </div>
+    <script src="src.js"></script>
+  </body>
+</html>
