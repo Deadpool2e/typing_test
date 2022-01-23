@@ -183,4 +183,7 @@ body {
     height: 28%;
     width: 42%;
   }
+  #steps{
+    width: 50%;
+  }
 }
