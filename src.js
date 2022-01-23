@@ -79,7 +79,7 @@ typedValueElement.addEventListener("input", () => {
     let wpm = Math.ceil((words.length) / minutes);
     accuracy =100- Math.round((errorCount/(words.length)) * 100);
     if(accuracy<0) accuracy =0;
-    const message = `CONGRATULATIONS! Your typing speed is ${wpm}wpm and accuracy is ${accuracy}% `;
+    const message = `Yay! Your typing speed is ${wpm}wpm and accuracy is ${accuracy}% `;
     messageElement.innerText = message;
 
     typedValueElement.value = "";
@@ -129,4 +129,16 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+};
+
+//direction button
+const direction = document.getElementById("direction");
+const steps = document.getElementById("steps");
+direction.onclick = function () {
+  steps.style.display = "block";
+}
+window.onclick = function (event) {
+    if(event.target!= direction){
+    steps.style.display = "none";
+    }
 };
